@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let a = parseFloat(prompt("Điểm bài kiểm tra"));
+  let b = parseFloat(prompt("Điểm thi giữa kỳ"));
+  let c = parseFloat(prompt("Điểm thi cuối kỳ"));
+  let d = (a + b*2 + c*3)/6
+  alert("Điểm trung bình là" + d)
+  d = (d > 8) ? "Học sinh giỏi ": (d > 6.5) ? "Học sinh khá" : (d > 5) ? "Học sinh trung bình" : "Học sinh yếu"
+  switch (d) {
+      case d:
+          alert(d)
+  }
+</script>
 </body>
 </html>
