@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        button {
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+<form action="">
+<table>
+    <tr></tr>
+        <td colspan="4"><input type="text" id="check"></td>
+    <tr>
+        <td><button type="button" value="1" onclick="hang(this.value)">1</button> </td>
+        <td><button type="button" value="2" onclick="hang(this.value)">2</button> </td>
+        <td><button type="button" value="3" onclick="hang(this.value)">3</button> </td>
+        <td><button type="button" value="+" onclick="hang(this.value)">+</button> </td>
+    </tr>
+
+    <tr>
+        <td><button type="button" value="4" onclick="hang(this.value)">4</button> </td>
+        <td><button type="button" value="5" onclick="hang(this.value)">5</button> </td>
+        <td><button type="button" value="6" onclick="hang(this.value)">6</button> </td>
+        <td><button type="button" value="-" onclick="hang(this.value)">-</button> </td>
+    </tr>
+
+    <tr>
+        <td><button type="button" value="7" onclick="hang(this.value)">7</button> </td>
+        <td><button type="button" value="8" onclick="hang(this.value)">8</button> </td>
+        <td><button type="button" value="9" onclick="hang(this.value)">9</button> </td>
+        <td><button type="button" value="*" onclick="hang(this.value)">x</button> </td>
+    </tr>
+
+    <tr>
+        <td><button type="reset">AC</button> </td>
+        <td><button type="button" value="0" onclick="hang(this.value)">0</button> </td>
+        <td><button type="button" onclick="result()">=</button> </td>
+        <td><button type="button" value="/" onclick="hang(this.value)">/</button></td>
+    </tr>
+</table>
+</form>
+<script>
+let check = document.getElementById("check")
+function hang(value) {
+    check.value += value ;
+}
+function result() {
+    let result = eval(check.value);
+    check.value = result ;
+}
+
+
+
+</script>
+
+</body>
+</html>
